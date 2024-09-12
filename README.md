@@ -1,4 +1,4 @@
-# Desafio de Galeria de Imagens - Processo Seletivo Frontend Fusion -[vaga voluntária]
+# Desafio de Galeria de Imagens - Processo Seletivo Frontend Fusion
 
 ## Sobre o Desafio
 
@@ -37,6 +37,7 @@ Faça o deploy da sua aplicação em plataformas como GitHub Pages, Heroku, Verc
 - Data de Entrega
 - Link do GitHub com o Código
 - Link do Deploy
+- Link da Postagem no LinkedIn mostrando os desafios concluídos
 
 **Observação:** É obrigatório entregar todos os três desafios em até **20 dias** após o início. Este é o **Desafio 02 de 03 desafios**. ⏳
 
@@ -59,7 +60,7 @@ Os critérios de avaliação incluirão:
 
 1. Faça um fork deste repositório. 🍴
 2. Crie um branch com seu nome: nome-sobrenome.
-3. Após completar o desafio, envie o link do deploy e do repositório por e-mail para **projetofrontendfusion@gmail.com** com o assunto: **"Entrega + Desafios[02] + Seu Nome"**. 📧
+3. Após completar o desafio, envie o link do deploy, o repositório do código-fonte e o link da postagem no LinkedIn por e-mail para **projetofrontendfusion@gmail.com** com o assunto: **"Entrega + Desafios[02] + Seu Nome"**. 📧
 
 ## Exemplo de E-mail:
 
@@ -77,7 +78,8 @@ Segue abaixo a entrega do Desafio 02 para o processo seletivo do Frontend Fusion
 **Data de Início:** 01/09/2024  
 **Data de Entrega:** 20/09/2024  
 **Link do GitHub com o Código:** [https://github.com/joaosilva/desafio02](https://github.com/joaosilva/desafio02)  
-**Link do Deploy:** [https://joaosilva.netlify.app](https://joaosilva.netlify.app)
+**Link do Deploy:** [https://joaosilva.netlify.app](https://joaosilva.netlify.app)  
+**Link da Postagem no LinkedIn:** [https://linkedin.com/posts/joaosilva/desafio-02](https://linkedin.com/posts/joaosilva/desafio-02)
 
 Agradeço a oportunidade e estou à disposição para qualquer dúvida.
 
