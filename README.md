@@ -1,4 +1,4 @@
-# Desafio de Galeria de Imagens - Processo Seletivo Frontend Fusion
+# Desafio de Galeria de Imagens - Processo Seletivo Frontend Fusion -[vaga voluntária]
 
 ## Sobre o Desafio
 
