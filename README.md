@@ -1,5 +1,10 @@
 # Desafio de Galeria de Imagens - Processo Seletivo Frontend Fusion
 
+> OBS : Você receberá um e-mail com a data de início dos desafios, mas eles já estão disponíveis para acesso imediato. 
+Se ainda não preencheu o formulário, por favor, acesse o link para completá-lo.
+[Forms de inscrição](https://forms.gle/EJKDNKdmVZM3zQTr7)
+é importante está inscrito no formulário , pois o seu email precisa ser validado
+
 ## Sobre o Desafio
 
 Bem-vindo ao desafio de galeria de imagens do processo seletivo do projeto Frontend Fusion para a vaga de Desenvolvedor React Júnior. Este desafio foi criado para avaliar suas habilidades em desenvolvimento com React e sua capacidade de criar uma aplicação de galeria de imagens. 📸
