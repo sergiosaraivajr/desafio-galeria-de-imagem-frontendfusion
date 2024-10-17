@@ -9,6 +9,8 @@ function App() {
   const [favorites, setFavorites] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [filterAuthor, setFilterAuthor] = useState("");
+  const [showFavorites, setShowFavorites] = useState(false);
 
   useEffect(() => {
     fetchImages();
@@ -41,6 +43,23 @@ function App() {
     setIsModalOpen(true);
   };
 
+  // Função para obter lista única de autores
+  const getAuthors = () => {
+    const authors = images.map((image) => image.author);
+    return [...new Set(authors)]; // Remove duplicatas
+  };
+
+  // Filtro de imagens
+  const filteredImages = images.filter((image) => {
+    if (showFavorites && !favorites.some((fav) => fav.id === image.id)) {
+      return false; // Exibe apenas favoritos se o filtro estiver ativo
+    }
+    if (filterAuthor && image.author !== filterAuthor) {
+      return false; // Aplica filtro por autor
+    }
+    return true;
+  });
+
   return (
     <main>
       <header className="bg-green-800 shadow-gray-700 shadow-lg h-12 flex items-center justify-center">
@@ -49,16 +68,54 @@ function App() {
         </h1>
       </header>
 
+      <div className="p-4 flex justify-between items-center">
+        {/* Filtro por autor */}
+        <div>
+          <label htmlFor="author-filter" className="mr-2 font-bold">
+            Filtrar por Autor:
+          </label>
+          <select
+            id="author-filter"
+            value={filterAuthor}
+            onChange={(e) => setFilterAuthor(e.target.value)}
+            className="p-2 border border-gray-300 rounded"
+          >
+            <option value="">Todos</option>
+            {getAuthors().map((author) => (
+              <option key={author} value={author}>
+                {author}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Botão para mostrar favoritos */}
+        <div>
+          <button
+            onClick={() => setShowFavorites(!showFavorites)}
+            className={`p-2 rounded-lg ${
+              showFavorites ? "bg-red-500" : "bg-gray-500"
+            } text-white`}
+          >
+            {showFavorites ? "Mostrar Todos" : "Mostrar Favoritos"}
+          </button>
+        </div>
+      </div>
+
       <section className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {images.map((image) => (
-          <ImageCard
-            key={image.id}
-            image={image}
-            isFavorite={favorites.some((fav) => fav.id === image.id)}
-            toggleFavorite={toggleFavorite}
-            openModal={openModal}
-          />
-        ))}
+        {filteredImages.length > 0 ? (
+          filteredImages.map((image) => (
+            <ImageCard
+              key={image.id}
+              image={image}
+              isFavorite={favorites.some((fav) => fav.id === image.id)}
+              toggleFavorite={toggleFavorite}
+              openModal={openModal}
+            />
+          ))
+        ) : (
+          <p className="text-center w-full">Nenhuma imagem encontrada.</p>
+        )}
       </section>
 
       {isModalOpen && (
