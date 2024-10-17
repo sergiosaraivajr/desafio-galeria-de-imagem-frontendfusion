@@ -29,22 +29,22 @@ src/
 ├── main.jsx # Ponto de entrada da aplicação
 └── ...
 
-## Componentes
+# Componentes
 
-# App.jsx
+## App.jsx
 
     Responsável por:
         - Buscar as imagens da API.
         - Gerenciar os estados de filtro e favoritos.
         - Renderizar os componentes de imagem e modal de detalhes.
 
-# ImageCard.jsx
+## ImageCard.jsx
 
     Responsável por:
         - Renderizar cada imagem na galeria.
         - Gerenciar o botão de favoritos.
 
-# ImageDetailsModal.jsx
+## ImageDetailsModal.jsx
 
     Responsável por:
         - Exibir as informações detalhadas da imagem (autor, ID, dimensões) em um modal.
