@@ -11,11 +11,19 @@ function ImageCard({ image, isFavorite, toggleFavorite, openModal }) {
       />
       <button
         className={`absolute top-2 right-2 p-1 ${
-          isFavorite ? "bg-red-500" : "bg-gray-500"
+          isFavorite ? "" : "bg-slate-100"
         } text-white rounded-full`}
         onClick={() => toggleFavorite(image)}
       >
-        {isFavorite ? "💾" : "⭐"}
+        {isFavorite ? (
+          <img src="../../public/star.png" alt="Favorito" className="w-7 h-7" />
+        ) : (
+          <img
+            src="../../public/star1.png"
+            alt="Favorito"
+            className="w-7 h-7"
+          />
+        )}
       </button>
     </div>
   );
