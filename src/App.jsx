@@ -68,7 +68,7 @@ function App() {
         </h1>
       </header>
 
-      <div className="p-4 flex justify-between items-center">
+      <div className="p-4 flex justify-around items-center">
         {/* Filtro por autor */}
         <div>
           <label htmlFor="author-filter" className="mr-2 font-bold">
