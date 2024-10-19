@@ -8,7 +8,7 @@ function ImageDetailsModal({ image, onClose }) {
         <img
           src={`https://picsum.photos/id/${image.id}/500/300`}
           alt={image.author}
-          className="w-full h-auto mb-4"
+          className="w-full h-auto mb-4 rounded-xl shadow-xl shadow-gray-800"
         />
         <p>
           <strong>Autor:</strong> {image.author}
@@ -21,7 +21,7 @@ function ImageDetailsModal({ image, onClose }) {
         </p>
 
         <button
-          className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg"
+          className="mt-4 bg-green-600 -left-1/4 text-white px-4 py-2 rounded-lg"
           onClick={onClose}
         >
           Fechar
