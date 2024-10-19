@@ -6,7 +6,7 @@ function ImageCard({ image, isFavorite, toggleFavorite, openModal }) {
       <img
         src={`https://picsum.photos/id/${image.id}/300/200`}
         alt={image.author}
-        className="w-full h-auto cursor-pointer"
+        className="w-full h-auto cursor-pointer rounded-xl shadow-xl shadow-gray-800"
         onClick={() => openModal(image)}
       />
       <button
