@@ -21,7 +21,7 @@ function ImageDetailsModal({ image, onClose }) {
         </p>
 
         <button
-          className="mt-4 bg-green-600 -left-1/4 text-white px-4 py-2 rounded-lg"
+          className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg"
           onClick={onClose}
         >
           Fechar
