@@ -63,7 +63,7 @@ function App() {
   return (
     <main>
       <header className="bg-green-800 shadow-gray-700 shadow-lg h-12 flex items-center justify-center">
-        <h1 className="text-green-200 w-auto font-bold">
+        <h1 className="text-slate-50 w-auto font-bold">
           Minha Galeria de Fotos
         </h1>
       </header>
@@ -93,7 +93,7 @@ function App() {
         <div>
           <button
             onClick={() => setShowFavorites(!showFavorites)}
-            className={`p-2 rounded-lg ${
+            className={`p-2 rounded-lg bg-yellow-500 shadow-xl shadow-gray-400 hover:bg-yellow-600 hover:shadow-2xl hover:shadow-gray-500${
               showFavorites ? "bg-red-500" : "bg-gray-500"
             } text-white`}
           >
