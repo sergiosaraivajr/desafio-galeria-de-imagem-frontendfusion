@@ -62,7 +62,7 @@ function App() {
 
   return (
     <main>
-      <header className="bg-green-800 shadow-gray-700 shadow-lg h-12 flex items-center justify-center">
+      <header className="bg-slate-700 shadow-gray-700 shadow-lg h-12 flex items-center justify-center">
         <h1 className="text-slate-50 w-auto font-bold">
           Minha Galeria de Fotos
         </h1>
